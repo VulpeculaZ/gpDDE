@@ -1,0 +1,25 @@
+Package: gpDDE
+Title: General Profiling Method for Delay Differential Equation
+Version: 0.8.0.1000
+Authors@R: c(person("Ziqian", "Zhou", email = "ziqian-zhou@uiowa.edu",
+    role = c("aut", "cre")),
+    person("Kung-Sik", "Chan", email = "kung-sik-chan@uiowa.edu",
+    role = c("aut")))
+Description:  This package implements collocation-inference for
+    stochasitic process driven by distributed delay differential equations.
+    It also provides shrinkage methods for selecting the lags for distributed delay
+    and tools for inference and prediction.
+Depends: R (>= 3.2.1),
+    fda,
+    CollocInfer
+License: GPL (>= 2)
+LazyData: true
+Imports:
+    penalized,
+    nnls,
+    deSolve,
+    MASS,
+    TSA,
+    lars,
+    limSolve,
+    trustOptim
